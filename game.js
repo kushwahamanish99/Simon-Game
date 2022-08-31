@@ -45,6 +45,15 @@ $(document).keypress(function(){
   }
 });
 
+$(".manish").click(function(){
+  if(started == false){
+    $("#level-title").text("Level 0");
+    nextSequence();
+    started = true;
+  }
+});
+
+
 function checkAnswer(currentLevel){
   if(userClickedPattern[currentLevel]==gamePattern[currentLevel]){
     console.log("success");
